@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CypCoin</title>
+    <!-- style css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+</head>
+
+<body>
+
+    <!-- preloader -->
+    <div id="preloader"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo">
+                <p>CyptoCoin</p>
+            </div>
+            <form action="login.html" class="btn-start">
+                <button>Get Started</button>
+            </form>
+            <ul class="menu">
+                <li><a class="active" href="#exchange">Exchange</a></li>
+                <li><a href="#company">Company</a></li>
+                <li><a href="#markets">Markets</a></li>
+                <li><a href="#nft">NFT</a></li>
+                <li><a href="#Learn">Learn</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <!-- Exchange Section -->
+    <section class="exchange" id="exchange">
+        <div class="max-width">
+            <div class="exchange-content">
+                <div class="left">
+                    <h1 class="title">Buy and trade cyptocurrencies on CyptoCoin</h1><br>
+                    <h2 class="title-1">$55 million</h2>
+                    <p>24h trading volume on CyptoCoin exchange</p><br>
+                    <h2 class="title-1">20 million</h2>
+                    <p>Registered users who trust CyptoCoin</p><br>
+                    <h2 class="title-1">0.10%</h2>
+                    <p>Lowest transaction fees</p><br>
+                    <input type="text" name="email" placeholder="Email address">
+                    <button class="btn">Get Started</button>
+                </div>
+                <div class="right">
+                    <img src="images/cypto2.png" alt="cypto">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Company Section -->
+    <section class="company" id="company">
+        <div class="company-container">
+            <div class="company-heading">
+                <h1>Company</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae dolorem ea incidunt nemo
+                    debitis facilis illum labore, perferendis magnam illo.</p>
+            </div>
+            <div class="company-row">
+
+                <div class="company-card">
+                    <div class="company-card-header">
+                        <div class="company-image">
+                            <img src="images/luna.png" alt="" class="company-img">
+                        </div>
+                        <h1>Lorem, ipsum dolor.</h1>
+                    </div>
+                    <div class="company-card-body">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque adipisci deserunt odio modi
+                        </p>
+                        <button class="btn-view">View</button>
+                    </div>
+                </div>
+
+                <div class="company-card">
+                    <div class="company-card-header">
+                        <div class="company-image">
+                            <img src="images/bnb.png" alt="" class="company-img">
+                        </div>
+                        <h1>Lorem, ipsum dolor.</h1>
+                    </div>
+                    <div class="company-card-body">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque adipisci deserunt odio modi
+                            quasi! Repellendus beatae odio officia repudiandae delectus.
+                        </p>
+                        <button class="btn-view">View</button>
+                    </div>
+                </div>
+
+                <div class="company-card">
+                    <div class="company-card-header">
+                        <div class="company-image">
+                            <img src="images/btc.png" alt="" class="company-img">
+                        </div>
+                        <h1>Lorem, ipsum dolor.</h1>
+                    </div>
+                    <div class="company-card-body">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque adipisci deserunt odio modi
+                            quasi! Repellendus beatae odio officia repudiandae delectus.
+                        </p>
+                        <button class="btn-view">View</button>
+                    </div>
+                </div>
+
+                <div class="company-card">
+                    <div class="company-card-header">
+                        <div class="company-image">
+                            <img src="images/sol.png" alt="" class="company-img">
+                        </div>
+                        <h1>Lorem, ipsum dolor.</h1>
+                    </div>
+                    <div class="company-card-body">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque adipisci deserunt odio modi
+                            quasi! Repellendus beatae odio officia repudiandae delectus.
+                        </p>
+                        <button class="btn-view">View</button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+    <!-- Markets section -->
+    <section class="markets" id="markets">
+        <div class="max-width">
+            <div class="markets-content">
+                <div class="markets-title">
+                    <h1>Markets</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, facilis.</p>
+                </div>
+
+                <div class="markets-container">
+                    <div class="coin-price">
+                        <div class="markets-logo"><img src="images/btc.png"></div>
+                        <div>
+                            <h1>$<span id="bitcoin"></span></h1>
+                            <h1>Bitcoin</h1>
+                        </div>
+                    </div>
+
+                    <div class="coin-price">
+                        <div class="markets-logo"><img src="images/bnb.png"></div>
+                        <div>
+                            <h1>$<span id="binancecoin"></span></h1>
+                            <h1>BNB</h1>
+                        </div>
+                    </div>
+
+                    <div class="coin-price">
+                        <div class="markets-logo"><img src="images/doge.png"></div>
+                        <div>
+                            <h1>$</h1<span id="dogecoin">.000214</span></h1>
+                            <h1>DOGE</h1>
+                        </div>
+                    </div>
+
+                    <div class="coin-price">
+                        <div class="markets-logo"><img src="images/eth.png"></div>
+                        <div>
+                            <h1>$<span id="ethereum"></span></h1>
+                            <h1>ETH</h1>
+                        </div>
+                    </div>
+
+                    <div class="coin-price">
+                        <div class="markets-logo"><img src="images/sol.png"></div>
+                        <div>
+                            <h1>$<span id="ethereum"></span>4234.1</h1>
+                            <h1>ETH</h1>
+                        </div>
+                    </div>
+
+                    <div class="coin-price">
+                        <div class="markets-logo"><img src="images/luna.png"></div>
+                        <div>
+                            <h1>$<span id="ethereum"></span>5323.1</h1>
+                            <h1>ETH</h1>
+                        </div>
+                    </div>
+
+                    <div class="coin-price">
+                        <div class="markets-logo"><img src="images/ronin.png"></div>
+                        <div>
+                            <h1>$<span id="ethereum">2134.1</span></h1>
+                            <h1>ETH</h1>
+                        </div>
+                    </div>
+
+                    <div class="coin-price">
+                        <div class="markets-logo"><img src="images/btc.png"></div>
+                        <div>
+                            <h1>$<span id="ethereum">1244.1</span></h1>
+                            <h1>ETH</h1>
+                        </div>
+                    </div>
+
+                    <div class="coin-price">
+                        <div class="markets-logo"><img src="images/eth.png"></div>
+                        <div>
+                            <h1>$<span id="ethereum"></span>1333.2</h1>
+                            <h1>ETH</h1>
+                        </div>
+                    </div>
+
+                    <div class="coin-price">
+                        <div class="markets-logo"><img src="images/bnb.png"></div>
+                        <div>
+                            <h1>$<span id="ethereum">2993.31</span></h1>
+                            <h1>ETH</h1>
+                        </div>
+                    </div>
+
+                    <div class="coin-price">
+                        <div class="markets-logo"><img src="images/luna.png"></div>
+                        <div>
+                            <h1>$<span id="ethereum">1000.2</span></h1>
+                            <h1>ETH</h1>
+                        </div>
+                    </div>
+
+                    <div class="coin-price">
+                        <div>
+                            <h1>View more</h1>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- NFT Section
+    <section class="nft" id="nft">
+        <div class="max-width">
+            <div class="nft-content">
+                <div class="nft-container">
+                    <div class="nft-content">
+                        <div class="card-wrapper">
+                            <div class="card">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+
+                                    <div class="card-image">
+                                        <img src="images/bnb.png" alt="" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="nft-name">Lorem ipsum dolor</h2>
+                                    <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        Dolore, eum!</p>
+                                    <button class="btn-view">View</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!--Learn -->
+    <section class="learn" id="Learn">
+        <div class="learn-container">
+            <div class="learn-item" id="question1">
+                <a href="#question1" class="question-link">
+                    Lorem ipsum dolor sit amet consectetur?
+                    <i class="fa-solid fa-plus"></i>
+                    <i class="fa-solid fa-minus"></i>
+                </a>
+                <div class="answer">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi officiis dignissimos aliquid
+                        iste libero, sed consequuntur quasi voluptas corporis dicta molestiae expedita similique
+                        deleniti vel
+                        eveniet quo quis ipsam adipisci?
+                    </p>
+                </div>
+            </div>
+
+            <div class="learn-item" id="question2">
+                <a href="#question2" class="question-link">
+                    Lorem ipsum dolor sit amet consectetur?
+                    <i class="fa-solid fa-plus"></i>
+                    <i class="fa-solid fa-minus"></i>
+                </a>
+                <div class="answer">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi officiis dignissimos aliquid
+                        iste libero, sed consequuntur quasi voluptas corporis dicta molestiae expedita similique
+                        deleniti vel
+                        eveniet quo quis ipsam adipisci?
+                    </p>
+                </div>
+            </div>
+
+            <div class="learn-item" id="question3">
+                <a href="#question3" class="question-link">
+                    Lorem ipsum dolor sit amet consectetur?
+                    <i class="fa-solid fa-plus"></i>
+                    <i class="fa-solid fa-minus"></i>
+                </a>
+                <div class="answer">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi officiis dignissimos aliquid
+                        iste libero, sed consequuntur quasi voluptas corporis dicta molestiae expedita similique
+                        deleniti vel
+                        eveniet quo quis ipsam adipisci?
+                    </p>
+                </div>
+            </div>
+
+            <div class="learn-item" id="question4">
+                <a href="#question4" class="question-link">
+                    Lorem ipsum dolor sit amet consectetur?
+                    <i class="fa-solid fa-plus"></i>
+                    <i class="fa-solid fa-minus"></i>
+                </a>
+                <div class="answer">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi officiis dignissimos aliquid
+                        iste libero, sed consequuntur quasi voluptas corporis dicta molestiae expedita similique
+                        deleniti vel
+                        eveniet quo quis ipsam adipisci?
+                    </p>
+                </div>
+            </div>
+
+            <div class="learn-item" id="question5">
+                <a href="#question5" class="question-link">
+                    Lorem ipsum dolor sit amet consectetur?
+                    <i class="fa-solid fa-plus"></i>
+                    <i class="fa-solid fa-minus"></i>
+                </a>
+                <div class="answer">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi officiis dignissimos aliquid
+                        iste libero, sed consequuntur quasi voluptas corporis dicta molestiae expedita similique
+                        deleniti vel
+                        eveniet quo quis ipsam adipisci?
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footerID">
+        <div class="footer">
+            <p>Copyright 2022 | Kent Jarold Abulag</p>
+            <div class="media">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="lib/script.js"></script>
+    <script src="lib/price.js"></script>
+    <script src="lib/app.js"></script>
+    <script>
+        // preloader
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function () {
+            loader.style.display = "none"
+        });
+    </script>
+</body>
+
+</html>
