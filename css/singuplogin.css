@@ -10,13 +10,14 @@
     font-family: 'Poppins', 'sans-serif';
 }
 
-body {
+section {
     height: 100vh;
+    background-color: #495C83;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #495C83;
 }
+
 
 /* Container */
 .container {
@@ -29,7 +30,7 @@ body {
     overflow: hidden;
 }
 
-.container .forms{
+.container .forms {
     display: flex;
     align-items: center;
     height: 430px;
@@ -40,18 +41,18 @@ body {
 /* active container */
 
 
-.container.active .login{
+.container.active .login {
     margin-left: -50%;
     opacity: 0;
     transition: margin-left 0.18s ease, opacity 0.15s ease;
 }
 
-.container .signup{
+.container .signup {
     opacity: 0;
     transition: opacity 0.09s ease;
 }
 
-.container.active .signup{
+.container.active .signup {
     opacity: 1;
     transition: opacity 0.2s ease;
 }
@@ -63,7 +64,7 @@ body {
     transition: margin-left 0.18s ease;
 }
 
-.container.active .forms{
+.container.active .forms {
     height: 600px;
 }
 
@@ -73,7 +74,7 @@ body {
     position: relative;
 }
 
-.form. title::before {
+.form .title::before {
     content: '';
     position: absolute;
     left: 0;
