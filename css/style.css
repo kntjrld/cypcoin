@@ -94,7 +94,6 @@
   display: flex;
   height: 100vh;
   background-color: #fff;
-  /* background: url("images/dotbg.png") no-repeat; */
   min-height: 500px;
   font-family: 'Ubuntu', sans-serif;
 }
@@ -117,24 +116,27 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   height: 40px;
   padding: 10px;
-  font-size: 12px;
-  border: solid 1px #ccc;
-  width: 300px;
-  -moz-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2);
-  box-shadow: inner 0 0 4px rgba(0, 0, 0, 0.2);
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+  margin-right: 20px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #ccc;
+  border-top: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.exchange-content input:is(:focus, :valid) {
+  border-bottom-color: #495C83;
 }
 
 .btn {
   padding: 10px;
   border-radius: 5px;
+  color: #000;
   margin-right: 2px;
   background: none;
-  margin-left: auto;
-  border-color: #495C83;
+  font-size: 16px;
+  border: 2px solid #495C83;
 }
 
 .btn:hover {
@@ -417,15 +419,6 @@
 }
 
 .answer {
-  max-height: 0;
-  overflow: hidden;
-  position: relative;
-  background-color: #ccc;
-  color: #fff;
-  transition: max-height 650ms;
-}
-
-.answer.anshidden {
   max-height: 0;
   overflow: hidden;
   position: relative;
